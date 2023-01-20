@@ -3,7 +3,9 @@ import time
 import datetime
 from speakcontent import speak_content
 from getcommand import get_command
+from duckduckgo import ddgs
 from telegramcall import telegram_call
+from getweather import get_weather
 # from switchcontrol import switchcontrol
 
 
@@ -66,6 +68,12 @@ def command_control(command):
         speak_content('I am listening to your command')
         print('I am listening to your command')
 
+    if command =='what is the weather' or command == 'tell me the weather' or command =='weather':
+        speak_content('for which location ?')
+        place = get_command()
+        forecast = get_weather(place)
+        speak_content("forecast for "+place+" is "+forecast)    
+
     # if command == 'turn on light':
     #     switchcontrol()
 
@@ -84,10 +92,18 @@ def command_control(command):
     #         import time
     #         time.sleep(10)
 
-
+    elif(command != None):
+        desc = ddgs(command)
+        speak_content(desc[0]['body'])
+        speak_content("do you want to hear next result ?")
+        yn = get_command()
+        if (yn=='okay sure'):
+            speak_content(desc[1]['body'])
+        else:
+            pass    
+ 
     elif(command == None):
-        speak_content('could you please repeat that !')
-        print("sorry coudn't understand you")
+        print("Going Sleep Mode !")
     else:
         pass    
 
