@@ -1,0 +1,258 @@
+[
+    {
+        "switch_intent": [],
+        "possible_tags": [],
+        "possible_slots": [],
+        "bot_response": [],
+        "required_tags": [],
+        "run_skill": [],
+        "skill_parameter": []
+    },
+    {
+        "switch_intent": [],
+        "possible_tags": [
+            "change",
+            "channel",
+            "volume",
+            "plus",
+            "minus",
+            "go",
+            "up",
+            "down",
+            "mute",
+            "power",
+            "remote",
+            "tv",
+            "on",
+            "off",
+            "next",
+            "previous"
+        ],
+        "possible_slots": [
+            "channel",
+            "volume",
+            "plus",
+            "minus",
+            "up",
+            "down",
+            "mute",
+            "power",
+            "tv",
+            "on",
+            "off",
+            "next",
+            "previous" 
+        ],
+        "bot_response": [],
+        "required_tags": [],
+        "run_skill": [],
+        "skill_parameter": []
+    },
+    {
+        "switch_intent": [],
+        "possible_tags": [
+            "what",
+            "is",
+            "the",
+            "current",
+            "weather",
+            "today's",
+            "today",
+            "forecast"
+        ],
+        "possible_slots": ["location"],
+        "bot_response": [],
+        "required_tags": ["weather"],
+        "run_skill": ["skill_weather"],
+        "skill_parameter": ["current_weather"]
+    },
+    {
+        "switch_intent": [],
+        "possible_tags": [
+            "what",
+            "is",
+            "the",
+            "current",
+            "news",
+            "today's",
+            "today",
+            "headlines",
+            "on"
+
+    ],
+        "possible_slots": ["latest"],
+        "bot_response": [],
+        "required_tags": ["news"],
+        "run_skill": ["skill_news"],
+        "skill_parameter": ["latest"]
+    },
+    {
+        "switch_intent": [],
+        "possible_tags": [
+            "load",
+            "json",
+            "jason",
+            "update",
+            "luna",
+            "brain",
+            "refresh"
+    ],
+        "possible_slots": [],
+        "bot_response": [],
+        "required_tags": [],
+        "run_skill": ["load_json"],
+        "skill_parameter": []
+    },
+    {
+        "switch_intent": [],
+        "possible_tags": [
+            "hello",
+            "hi",
+            "hey",
+            "there"
+        ],
+        "possible_slots": [],
+        "bot_response": [
+            "Hello There",
+            "Hey There",
+            "Hi , what can i do for you ?",
+            "Hi , i've been Waiting",
+            "what's up"
+        ],
+        "required_tags": [],
+        "run_skill": [],
+        "skill_parameter": []
+    },
+    {
+        "switch_intent": [],
+        "possible_tags": [
+            "shutdown",
+            "terminate",
+            "exit"
+        ],
+        "possible_slots": [],
+        "bot_response": [
+            "Shutting down",
+            "Terminating",
+            "exiting"
+        ],
+        "required_tags": [],
+        "run_skill": [],
+        "skill_parameter": []
+    },
+    {
+        "switch_intent": [],
+        "possible_tags": [
+            "what",
+            "are",
+            "you",
+            "who",
+            "name",
+            "what's"
+        ],
+        "possible_slots": [],
+        "bot_response": [
+            "Hi , I'm Luna , Central A.I of Raven System.",
+            "my Name is Luna! Raven's Central A.I"
+        ],
+        "required_tags": [],
+        "run_skill": [],
+        "skill_parameter": []
+    },
+    {
+        "switch_intent": [],
+        "possible_tags": [
+            "what's",
+            "what",
+            "is",
+            "are",
+            "you",
+            "doing",
+            "going",
+            "on",
+            "up"
+        ],
+        "possible_slots": [],
+        "bot_response": [
+            "I'm Bored , so I'm Counting Starts on Sky",
+            "Checking The Moon position",
+            "I'm Watering my Digital Grass Field",
+            "Sleepin , of course i'm Bored"
+        ],
+        "required_tags": [],
+        "run_skill": [],
+        "skill_parameter": []
+    },
+    {
+        "switch_intent": [],
+        "possible_tags": [
+            "who",
+            "who's",
+            "you",
+            "your",
+            "is",
+            "created",
+            "creator",
+            "made"
+        ],
+        "possible_slots": [],
+        "bot_response": [
+            "Sathish Infinit is my creator",
+            "i was coded by sathish",
+            "my codes are open source , but infiniti is my creator"
+        ],
+        "required_tags": [
+            
+        ],
+        "run_skill": [],
+        "skill_parameter": []
+    },
+    {
+        "switch_intent": [],
+        "possible_tags": [
+            "time",
+            "what's",
+            "what",
+            "is",
+            "the",
+            "tell",
+            "me",
+            "it"
+        ],
+        "possible_slots": [],
+        "bot_response": [],
+        "required_tags": [
+            "time"
+        ],
+        "run_skill": [
+            "skill_datetime"
+        ],
+        "skill_parameter": [
+            "time"
+        ]
+    },
+    {
+        "switch_intent": [],
+        "possible_tags": [
+            "date",
+            "what's",
+            "what",
+            "is",
+            "the",
+            "tell",
+            "me",
+            "it"
+        ],
+        "possible_slots": [],
+        "bot_response": [],
+        "required_tags": [
+            "date"
+        ],
+        "run_skill": [
+            "skill_datetime"
+        ],
+        "skill_parameter": [
+            "date"
+        ]
+    }
+]
