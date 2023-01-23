@@ -60,7 +60,7 @@ def luna_listern():
 
         r.adjust_for_ambient_noise(source)
         r.dynamic_energy_threshold = True
-        r.pause_threshold = 0.8
+        r.pause_threshold = 0.7
         print('Listerning...')
         lunautils.sound_player(lunautils.find_file("speechon.mp3"))
         
@@ -86,9 +86,20 @@ def luna_speak(speech_content):
     voice = engine.getProperty('voices')
     engine.setProperty('voice', voice[28].id)
 
-    print(speech_content)
+    print("Response: ",speech_content)
     engine.say(speech_content)
     engine.runAndWait() 
+
+    # import gtts as gt 
+    # import os      
+    # from playsound import playsound 
+    
+    # TamilText="what's up ,what is going on"
+    # tts = gt.gTTS(text=TamilText, lang='en')
+    # tts.save("Tamil-Audio.mp3")
+    # playsound("Tamil-Audio.mp3")
+    # os.remove("Tamil-Audio.mp3")
+
 
 ###################################################################################################
 
@@ -98,12 +109,11 @@ def luna_think(input_string):
     import re
     import random
     # Store JSON data
-    response_data = luna_utils.load_json( "/Users/sathishkumar/Documents/code/python/workspaces/luna/v2_2/core/luna_brain.json")
+    response_data = luna_utils.load_json(luna_utils.find_file("luna_brain.json"))
     # switch_intent , possible_tags , possible_slots , bot_response , required_tags , run_skill , skill_parameter
 
-    print(input_string)
     if not (input_string == None):
-        print(input_string)
+
         input_words = re.split(r'\s+|[,;?!.-]\s*', input_string.lower())
 
         score_list = []
