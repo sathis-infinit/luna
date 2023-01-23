@@ -1,13 +1,13 @@
 
 
 def skill_weather(*args):
-	import core.core_modules as coremodules
+	import core.luna_core as coremodules
 	import core.luna_utils as lunautils
 	import requests
 	import bs4
 	import geocoder
 	import sys
-	import core.core_modules as coremodules
+	import core.luna_core as coremodules
 	city = geocoder.ip('me').city
 		# Generating the url
 	url = "https://google.com/search?q=weather+in+" + city
