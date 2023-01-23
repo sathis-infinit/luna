@@ -1,7 +1,0 @@
-struct
-pyaudio
-pvporcupine
-pathlib
-speech_recognition
-playsound 
-pyttsx3
