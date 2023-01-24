@@ -1,7 +1,7 @@
 
 def skill_datetime(param="datetime",*args):
 
-    import core.core_modules as coremodules
+    import core.luna_core as coremodules
     import core.luna_utils as lunautils    
     from datetime import datetime
 

@@ -174,10 +174,10 @@
         ],
         "possible_slots": [],
         "bot_response": [
-            "I'm Bored , so I'm Counting Starts on Sky",
-            "Checking The Moon position",
-            "I'm Watering my Digital Grass Field",
-            "Sleepin , of course i'm Bored"
+            "nothing much",
+            "i was sleeping",
+            "simply waiting for your command",
+            "Sleepin , of course , i'm Bored"
         ],
         "required_tags": [],
         "run_skill": [],

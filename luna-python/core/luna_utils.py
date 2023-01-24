@@ -20,13 +20,10 @@ def skill_manager(skill_name,skill_parameters):
     skill_name = skill_name[0]
     skill_parameters = skill_parameters[0]
     importline = "import skill."+skill_name+" as skill"
-
-    print(importline)
     exec(importline)
     
     if not skill_name == None:
         runline = "skill." + skill_name + "(" +"'"+ skill_parameters + "'" + ")"
-        print(runline)
         exec(runline)
 
 

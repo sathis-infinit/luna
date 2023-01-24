@@ -2,7 +2,7 @@
 
 def central_control():
 
-    import core.core_modules as lunacore
+    import core.luna_core as lunacore
 
     wake_check = lunacore.luna_wake()
     if wake_check == True:
@@ -12,7 +12,7 @@ def central_control():
 
 def active():
 
-    import core.core_modules as lunacore
+    import core.luna_core as lunacore
 
     command = lunacore.luna_listern()
     print('Command: ', command)
@@ -21,7 +21,7 @@ def active():
 
 
 def command_check(command):
-    import core.core_modules as lunacore
+    import core.luna_core as lunacore
     import core.luna_utils as lunautils
 
     if command == None:

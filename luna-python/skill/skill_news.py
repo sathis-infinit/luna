@@ -2,7 +2,7 @@
 
 def skill_news(*args):
 
-    import core.core_modules as coremodules
+    import core.luna_core as coremodules
     import core.luna_utils as lunautils
     import requests
     import json
