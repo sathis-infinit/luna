@@ -2,6 +2,6 @@ struct
 pyaudio
 pvporcupine
 pathlib
-speech_recognition
+SpeechRecognition
 playsound 
 pyttsx3
